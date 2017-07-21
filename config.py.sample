@@ -1,0 +1,20 @@
+WEBSITE_URL = ""
+DIV_ID = ""
+
+"""
+Application database configuration
+"""
+DB_NAME = ""
+DB_USER = ""
+DB_PASS = ""
+DB_SERVICE = ""
+DB_SERVICE = ""
+DB_PORT = 5432
+
+"""
+Database URI will be generated with the already gotten database parameters
+"""
+# SQLALCHEMY_DATABASE_URI = 'sqlite:///database.db'
+SQLALCHEMY_DATABASE_URI = 'postgresql://{0}:{1}@{2}:{3}/{4}'.format(
+    DB_USER, DB_PASS, DB_SERVICE, DB_PORT, DB_NAME
+)

@@ -1,0 +1,4 @@
+bs4==0.0.1
+requests==2.13.0
+SQLAlchemy==1.1.11
+psycopg2==2.6.2
